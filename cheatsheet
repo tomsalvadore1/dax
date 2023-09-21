@@ -1,0 +1,5 @@
+truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[colonne] == valeur_num_a_compter))
+truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[colonne] <> valeur_num_a_ne_pas_compter))   # <> signifie !=
+truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[colonne] == valeur_num_a_compter), FILTER(table,table[colonne2] == "valeur_txt") #on ajoute une virgule pour ajouter un autre filtre et un txt se met entre guillemets
+
+  
