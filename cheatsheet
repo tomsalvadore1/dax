@@ -2,4 +2,8 @@ truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[c
 truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[colonne] <> valeur_num_a_ne_pas_compter))   # <> signifie !=
 truc_que_je_veux_compter = CALCULATE( COUNT(table[colonne]),FILTER(table,table[colonne] == valeur_num_a_compter), FILTER(table,table[colonne2] == "valeur_txt") #on ajoute une virgule pour ajouter un autre filtre et un txt se met entre guillemets
 
-  
+  Contenu du filtre = 
+SELECTEDVALUE(table[colonne];"Pas de filtre ") 
+& " / " &  
+SELECTEDVALUE(...)
+affiche les filtres catifs sur la page du rapport 
